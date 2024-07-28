@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import React, { useEffect } from "react";
+import AppRoutes from "./AppRoutes";
+import "./CustomCursor.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./Header";
+import Footer from "./Footer";
 
-function App() {
+const App = () => {
+  
+  useEffect(() => {
+    const cursor = document.querySelector(".custom-cursor");
+
+    const handleMouseDown = () => {
+        if (!cursor.classList.contains("click")) {
+            cursor.classList.add("click");
+
+            setTimeout(() => {
+                cursor.classList.remove("click");
+            }, 800);
+        }
+    };
+
+    const handleMouseMove = (event) => {
+        const x = event.pageX - cursor.offsetWidth / 2;
+        const y = event.pageY - cursor.offsetHeight / 2;
+
+        cursor.style.left = `${x}px`;
+        cursor.style.top = `${y}px`;
+    };
+
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+        window.removeEventListener("mousedown", handleMouseDown);
+        window.removeEventListener("mousemove", handleMouseMove);
+    };
+}, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+      <div className="custom-cursor"></div>
+        <Header />
+        <AppRoutes />
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
