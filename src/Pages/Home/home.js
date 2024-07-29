@@ -6,11 +6,8 @@ import animationData from "../../Assets/mail-animation.json";
 import "./home.css";
 import Techstack from "../Techstack";
 import Projects from "../Projects/Projects";
-import { Fade, Zoom } from 'react-reveal';
 import Typewriter from 'typewriter-effect';
-import Typical from 'react-typical';
-
-
+import { motion } from 'framer-motion';
 
 
 const Home = () => {
@@ -28,7 +25,11 @@ const Home = () => {
         <div className="home">
             <Container className="base">
                 <div className="tag-parent">
-                    <Zoom>
+                    <motion.div
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.8, opacity: 0 }}
+                        transition={{ duration: 0.5 }} >
                         <div>
                             Creating innovative solutions and
                         </div>
@@ -49,8 +50,8 @@ const Home = () => {
 
                             </div>
                         </div>
+                    </motion.div>
 
-                    </Zoom>
                     <Link to="/about">
                         <button className="home-btn">Peek Inside My World</button>
                     </Link>
@@ -59,7 +60,13 @@ const Home = () => {
                 </div>
                 <div className="section2">
                     <div className="welcome-text">
-                        <Zoom> <h2>Hello I'm Harsha Saketh,<br /> <span>Developer</span> and Software <span>Strategist.</span></h2></Zoom>
+                        <motion.div
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.8, opacity: 0 }}
+                            transition={{ duration: 0.5 }} >
+                            <h2>Hello I'm Harsha Saketh,<br /> <span>Developer</span> and Software <span>Strategist.</span></h2>
+                        </motion.div>
                     </div>
                     <div className="contact">
                         <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
