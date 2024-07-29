@@ -28,7 +28,7 @@ function Projects() {
               isBlog={false}
               title="Secure Banking"
               description="Secure Banking is a state-of-the-art banking application that prioritizes modern banking features and stringent security protocols. The application employs HTTPS for secure communication, JWT tokens for authentication, role-based session management for controlled access, and OTP authentication for enhanced security. Built using Angular, Spring Boot, and PostgreSQL, Secure Banking is designed for reliability and scalability. The application is deployed using Docker, ensuring a consistent and efficient environment."
-              ghLink=""
+              ghLink="https://github.com/hkonjeti3/SystemProtocol_SBS"
               demoLink=""
             />
           </Col>
@@ -52,36 +52,7 @@ function Projects() {
               demoLink=""
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Leaf Detection"
-              description="A machine learning project to detect diseases in leaves..."
-              ghLink="https://github.com/your-repo"
-              demoLink="https://your-demo-link.com"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Suicide Prevention"
-              description="A mental health awareness project to prevent suicide..."
-              ghLink="https://github.com/your-repo"
-              demoLink="https://your-demo-link.com"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Emotion Detection"
-              description="A project to detect emotions from facial expressions skjdnv kk iub iu iu biu biubfi ubsiufb fibviusfb iub ibfsiuvbfiub iubiub uiidsu biu iusdi ubi uius iusnf iusnfiuvhfdiu bi bfidvfiun ui iu hiud uifduihdfiuv bnuifd niuf iudfhiudfvhiuvhui uidfhiudfhvuh uidf iudfihhdfiuhv jkdnciund iuniu iuhn iuniu nki uybhyub uybuyb yijb kb v hgvs uv yub dsuy bsui dbiu dbsiu biu bsiu bi bhiu hisu hniu s hfs"
-              ghLink="https://github.com/your-repo"
-              demoLink="https://your-demo-link.com"
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>
