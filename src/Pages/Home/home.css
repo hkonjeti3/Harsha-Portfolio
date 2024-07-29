@@ -3,29 +3,16 @@
   text-align: center;
   font-size: 55px;
   font-weight: bold;
-
 }
 
-/* .tag-second-parent{
-  display: flex;
-  justify-content: space-evenly;
-   /* border: 2px solid sandybrown;  
-} */
 .tag-second {
   display: flex;
-  /* border: 2px solid white; */
   justify-content: center;
-  /* width: max-content; */
   font-size: 55px;
-
-  /* position: inherit; */
-
-
+  flex-wrap: wrap;
 }
 
 .tag-second div {
-  /* border: 2px solid green; */
-  /* color: rgb(114, 0, 254); */
   color: #c6e82f;
   font-style: italic;
   font-weight: normal;
@@ -35,7 +22,6 @@
   color: white !important;
   font-weight: bold !important;
   font-style: normal !important;
-
 }
 
 .home-btn {
@@ -45,7 +31,6 @@
   border-color: rgb(114, 0, 254);
   padding: 10px 25px;
   font-size: large;
-
 }
 
 
@@ -69,16 +54,17 @@
 .section2 {
   padding-top: 60px;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   /* border: 2px solid sienna; */
 }
-.welcome-text span{
-  color:#c6e82f;
-  }
 
-.welcome-text span:hover{
-color: #8eac08;
+.welcome-text span {
+  color: #c6e82f;
+}
+
+.welcome-text span:hover {
+  color: #8eac08;
 }
 
 .skills_container {
@@ -113,7 +99,6 @@ color: #8eac08;
   text-align: center;
   font-size: xx-large;
   color: #fff !important;
-
 }
 
 .email :hover {
@@ -255,14 +240,11 @@ color: #8eac08;
   text-align: center;
   color: #c6e82f;
   display: flex;
-  /* border: 2px solid white; */
-
 }
 
 .project-heading-parent {
   display: flex;
-  /* border: 2px solid wheat; */
-  /* align-items: end; */
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -271,7 +253,6 @@ color: #8eac08;
 }
 
 .project-glimse {
-  /* border: 2px solid salmon; */
   font-size: 25px;
   text-align: left;
   padding-left: 45px;
@@ -285,30 +266,23 @@ color: #8eac08;
 .about-container {
   display: flex;
   justify-content: space-between;
-  /* margin-top: -100px; */
+  flex-wrap: wrap;
 }
 
 .about-heading {
-
   text-align: center;
-
-  /* margin-bottom: -120px; */
 }
 
 .about-heading img {
   height: 700px;
   width: 600px;
-
-  /* margin-left: -170px;   */
 }
 
 .about-me {
 
   padding: 0px 60px;
-  /* padding-bottom: 40px !important; */
   font-size: 20px;
   text-align: justify;
-
 }
 
 .about-me h2 {

@@ -20,7 +20,7 @@ function About() {
     return (
         <about>
             <div className="about-container">
-                <div className="about-heading col-lg-4"><img src={aboutImg}></img></div>
+                <div className="about-heading col-lg-4 colg-md-12"><img src={aboutImg}></img></div>
                 <div className="about-me col-lg-8">
                     <Zoom><h2>About Me</h2></Zoom>
                 <p></p>Hi there! I'm Harsha Saketh Konjeti, currently pursuing my Master's in Computer Science at Indiana University Bloomington. With a solid foundation in programming, data management, web development, and software engineering principles, I am eager to leverage my skills in real-world projects.<p />

@@ -29,18 +29,18 @@ const Home = () => {
             <Container className="base">
                 <div className="tag-parent">
                     <Zoom>
-                    <div>
-                        Creating innovative solutions and
-                    </div>
-                    <div className="tag-second-parent">
+                        <div>
+                            Creating innovative solutions and
+                        </div>
+
                         <div className="tag-second">
                             <div className="tag-part1">
                                 experiences with&nbsp;
                             </div>
                             <div className="typewriter">
-                                <Typewriter 
+                                <Typewriter
                                     options={{
-                                        strings: [' Unique Vision.', ' Strategic Insight.', ' Technical Expertise.'],
+                                        strings: [' Unique Vision', ' Strategic Insight', ' Technical Expertise'],
                                         autoStart: true,
                                         loop: true,
                                         deleteSpeed: 50,
@@ -49,13 +49,13 @@ const Home = () => {
 
                             </div>
                         </div>
-                    </div>
+
                     </Zoom>
                     <Link to="/about">
                         <button className="home-btn">Peek Inside My World</button>
                     </Link>
 
-                   
+
                 </div>
                 <div className="section2">
                     <div className="welcome-text">
@@ -68,14 +68,16 @@ const Home = () => {
                         <div className="about-contact-me">click to mail</div>
                     </div>
                 </div>
-                <Projects id="projects" />
+                <div id="recent-works">
+                    <Projects />
+                </div>
                 <Container className="skills_container">
                     <div className="skills">Technological Arsenal</div>
                 </Container>
                 <Techstack />
                 <div className="email">
-                <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
-                    harshasaketh.konjeti@gmail.com <i class="bi bi-arrow-up-right arrow"></i>
+                    <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
+                        harshasaketh.konjeti@gmail.com <i class="bi bi-arrow-up-right arrow"></i>
                     </a>
                 </div>
             </Container>
