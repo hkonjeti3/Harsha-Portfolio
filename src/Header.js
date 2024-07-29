@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const Header = () => {
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1jrhLw9i0bhGGiGdcG3Ac0QOyjLy-1MJL/view?usp=share_link', '_blank'); // Navigate to the Google Drive link
+    window.open('https://drive.google.com/file/d/1qaZdtpAaZf8IqaBiGQ6xhG_8ZJyJSxHz/view?usp=drive_link', '_blank'); // Navigate to the Google Drive link
   };
 
   const navigate = useNavigate();
